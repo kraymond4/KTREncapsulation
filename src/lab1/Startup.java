@@ -13,11 +13,9 @@ public class Startup {
         Employee employee = new Employee("Peter", "Piper","333-1234" );
         
         
-        employee.meetDepartmentStaff();
-        employee.meetWithHrForBenefitAndSalryInfo();
-        employee.reviewDeptPolicies();
+        
 
-        System.out.println("The employee's status is: " + employee.getStatus());
+        System.out.println("The employee's status is: " + employee.goForIt("5968337"));
     }
     
     

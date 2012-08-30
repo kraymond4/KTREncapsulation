@@ -126,13 +126,13 @@ public class Employee
     }
     
     
-    public void goForIt()
+    public String goForIt(String id)
     {
         meetWithHrForBenefitAndSalryInfo();
         meetDepartmentStaff();
         reviewDeptPolicies();
-        moveIntoCubicle(cubeId);
-        
+        moveIntoCubicle(id);
+        return getStatus();
     }
     
     
@@ -189,10 +189,10 @@ public class Employee
 
     }
 
-    public String getStatus() 
+    private String getStatus() 
     {
-        if(metWithHr && metDeptStaff
-           && reviewedDeptPolicies && movedIn) 
+        if(getHR() && getStaff()
+           && getPolicy() && getMoves()) 
         {
             return "Orientation is complete";
         } 
