@@ -9,8 +9,12 @@ import java.util.Date;
  *
  * @author      Jim Lombardo, WCTC Instructor
  * @version     1.01
+ * 
+ * 
+ * Kyle Raymond was here
  */
-public class Employee {
+public class Employee 
+{
     String firstName;
     String lastName;
     public String ssn;
@@ -21,30 +25,39 @@ public class Employee {
     boolean movedIn;
     String cubeId;
 
-    public Employee() {
+    public Employee() 
+    {
 
     }
 
     // Assume this must be performed first
-    public void meetWithHrForBenefitAndSalryInfo() {
+    public void meetWithHrForBenefitAndSalryInfo() 
+    {
         metWithHr = true;
     }
 
     // Assume this is must be performed second
-    public void meetDepartmentStaff() {
-        if(metWithHr) {
+    public void meetDepartmentStaff() 
+    {
+        if(metWithHr) 
+        {
             metDeptStaff = true;
-        } else {
+        } else 
+        {
             throw new IllegalStateException("Sorry, you cannot meet with "
                     + "department staff until you have met with HR.");
         }
     }
 
     // Assume this must be performed third
-    public void reviewDeptPolicies() {
-        if(metWithHr && metDeptStaff) {
+    public void reviewDeptPolicies() 
+    {
+        if(metWithHr && metDeptStaff) 
+        {
             reviewedDeptPolicies = true;
-        } else {
+        } 
+        else 
+        {
             throw new IllegalStateException("Sorry, you cannot review "
                     + " department policies until you have first met with HR "
                     + "and then with department staff.");
@@ -52,11 +65,15 @@ public class Employee {
     }
 
     // Assume this must be performed 4th
-    public void moveIntoCubicle(String cubeId) {
-        if(metWithHr && metDeptStaff && reviewedDeptPolicies) {
+    public void moveIntoCubicle(String cubeId) 
+    {
+        if(metWithHr && metDeptStaff && reviewedDeptPolicies) 
+        {
             this.cubeId = cubeId;
             this.movedIn = true;
-        } else {
+        } 
+        else 
+        {
             throw new IllegalStateException("Sorry, you cannot move in to a "
                     + "cubicle until you have first met with HR "
                     + "and then with department staff, and then reviewed"
@@ -65,11 +82,15 @@ public class Employee {
 
     }
 
-    public String getStatus() {
+    public String getStatus() 
+    {
         if(metWithHr && metDeptStaff
-           && reviewedDeptPolicies && movedIn) {
+           && reviewedDeptPolicies && movedIn) 
+        {
             return "Orientation is complete";
-        } else {
+        } 
+        else 
+        {
             return "Orientation in progress...";
         }
     }
