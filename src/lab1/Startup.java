@@ -15,7 +15,7 @@ public class Startup {
         
         
 
-        System.out.println("The employee's status is: " + employee.goForIt("5968337"));
+        System.out.println("The employee's status is: " + employee.goForIt());
     }
     
     

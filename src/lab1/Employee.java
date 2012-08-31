@@ -125,13 +125,14 @@ public class Employee
         cubeId = id;
     }
     
+    //end of getters and setters
     
-    public String goForIt(String id)
+    public String goForIt()
     {
         meetWithHrForBenefitAndSalryInfo();
         meetDepartmentStaff();
         reviewDeptPolicies();
-        moveIntoCubicle(id);
+        moveIntoCubicle("749688834");
         return getStatus();
     }
     
