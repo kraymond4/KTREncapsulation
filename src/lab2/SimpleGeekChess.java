@@ -9,5 +9,6 @@ package lab2;
  */
 public class SimpleGeekChess 
 {
+    private int turn;
     
 }
