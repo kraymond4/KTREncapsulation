@@ -10,6 +10,8 @@ package lab2;
  */
 public class FlatBoardWorld 
 {
-    private int ranks;
-    private int files;
+    //two dimensional array of ChessCharacters
+    //
+    
+    
 }

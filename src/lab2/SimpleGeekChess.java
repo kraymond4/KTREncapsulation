@@ -11,4 +11,5 @@ public class SimpleGeekChess
 {
     private int turn;
     
+    
 }

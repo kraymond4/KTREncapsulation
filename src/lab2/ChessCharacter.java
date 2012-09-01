@@ -10,7 +10,18 @@ package lab2;
  */
 public class ChessCharacter 
 {
-    private boolean player;
+    private String name;
     private boolean captured;
+    
+    
+    
+    
+    //"move" method
+    
+    
+    //"attack method
+    
+    
+    
     
 }
