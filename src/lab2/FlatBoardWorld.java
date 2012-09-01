@@ -11,7 +11,16 @@ package lab2;
 public class FlatBoardWorld 
 {
     //two dimensional array of ChessCharacters
-    //
+    //array will have "empty space" ChessCharacters to aid validation
+    //array goes here
+    
+    //represents if a king is in check
+    private boolean isInCheck;
+    
+    
+    
+    
+    
     
     
 }
